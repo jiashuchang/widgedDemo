@@ -13,6 +13,20 @@
 		690C010022432D93002E2344 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 690C00FF22432D93002E2344 /* main.m */; };
 		690C010A22432D94002E2344 /* widgedDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 690C010922432D94002E2344 /* widgedDemoTests.m */; };
 		690C011522432D94002E2344 /* widgedDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 690C011422432D94002E2344 /* widgedDemoUITests.m */; };
+		690C01242243300C002E2344 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690C01232243300C002E2344 /* HomeViewController.m */; };
+		690C01272243317E002E2344 /* EquipmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690C01262243317E002E2344 /* EquipmentViewController.m */; };
+		690C012A224331AD002E2344 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690C0129224331AD002E2344 /* FriendsViewController.m */; };
+		690C013222433273002E2344 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690C013122433273002E2344 /* NotificationCenter.framework */; };
+		690C013622433273002E2344 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690C013522433273002E2344 /* TodayViewController.m */; };
+		690C013D22433273002E2344 /* widgedDemoWidgedToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 690C012F22433273002E2344 /* widgedDemoWidgedToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69F0DEA122446CA500B8A11B /* JSCPublicFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F0DE9822446CA500B8A11B /* JSCPublicFramework.framework */; };
+		69F0DEA822446CA500B8A11B /* JSCPublicFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F0DEA722446CA500B8A11B /* JSCPublicFrameworkTests.m */; };
+		69F0DEAA22446CA500B8A11B /* JSCPublicFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F0DE9A22446CA500B8A11B /* JSCPublicFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69F0DEAD22446CA500B8A11B /* JSCPublicFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F0DE9822446CA500B8A11B /* JSCPublicFramework.framework */; };
+		69F0DEAE22446CA500B8A11B /* JSCPublicFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69F0DE9822446CA500B8A11B /* JSCPublicFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69F0DEB622446CCD00B8A11B /* JSCPublicFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F0DE9822446CA500B8A11B /* JSCPublicFramework.framework */; };
+		69F0DEB922446D5000B8A11B /* JSCDataShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F0DEB722446D5000B8A11B /* JSCDataShare.h */; };
+		69F0DEBA22446D5000B8A11B /* JSCDataShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F0DEB822446D5000B8A11B /* JSCDataShare.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +44,60 @@
 			remoteGlobalIDString = 690C00F222432D93002E2344;
 			remoteInfo = widgedDemo;
 		};
+		690C013B22433273002E2344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 690C00EB22432D93002E2344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 690C012E22433273002E2344;
+			remoteInfo = widgedDemoWidgedToday;
+		};
+		69F0DEA222446CA500B8A11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 690C00EB22432D93002E2344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69F0DE9722446CA500B8A11B;
+			remoteInfo = JSCPublicFramework;
+		};
+		69F0DEA422446CA500B8A11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 690C00EB22432D93002E2344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 690C00F222432D93002E2344;
+			remoteInfo = widgedDemo;
+		};
+		69F0DEAB22446CA500B8A11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 690C00EB22432D93002E2344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69F0DE9722446CA500B8A11B;
+			remoteInfo = JSCPublicFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		690C014122433273002E2344 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				690C013D22433273002E2344 /* widgedDemoWidgedToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F0DEB422446CA600B8A11B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				69F0DEAE22446CA500B8A11B /* JSCPublicFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		690C00F322432D93002E2344 /* widgedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = widgedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +113,27 @@
 		690C011022432D94002E2344 /* widgedDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = widgedDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		690C011422432D94002E2344 /* widgedDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = widgedDemoUITests.m; sourceTree = "<group>"; };
 		690C011622432D94002E2344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		690C01222243300C002E2344 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		690C01232243300C002E2344 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		690C01252243317E002E2344 /* EquipmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EquipmentViewController.h; sourceTree = "<group>"; };
+		690C01262243317E002E2344 /* EquipmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EquipmentViewController.m; sourceTree = "<group>"; };
+		690C0128224331AD002E2344 /* FriendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		690C0129224331AD002E2344 /* FriendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		690C012F22433273002E2344 /* widgedDemoWidgedToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgedDemoWidgedToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		690C013122433273002E2344 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		690C013422433273002E2344 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		690C013522433273002E2344 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		690C013A22433273002E2344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		690C0142224334DE002E2344 /* widgedDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widgedDemo.entitlements; sourceTree = "<group>"; };
+		690C0143224334E9002E2344 /* widgedDemoWidgedToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widgedDemoWidgedToday.entitlements; sourceTree = "<group>"; };
+		69F0DE9822446CA500B8A11B /* JSCPublicFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSCPublicFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F0DE9A22446CA500B8A11B /* JSCPublicFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCPublicFramework.h; sourceTree = "<group>"; };
+		69F0DE9B22446CA500B8A11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F0DEA022446CA500B8A11B /* JSCPublicFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSCPublicFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F0DEA722446CA500B8A11B /* JSCPublicFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCPublicFrameworkTests.m; sourceTree = "<group>"; };
+		69F0DEA922446CA500B8A11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F0DEB722446D5000B8A11B /* JSCDataShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCDataShare.h; sourceTree = "<group>"; };
+		69F0DEB822446D5000B8A11B /* JSCDataShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCDataShare.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F0DEAD22446CA500B8A11B /* JSCPublicFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +159,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		690C012C22433273002E2344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F0DEB622446CCD00B8A11B /* JSCPublicFramework.framework in Frameworks */,
+				690C013222433273002E2344 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F0DE9422446CA500B8A11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F0DE9D22446CA500B8A11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F0DEA122446CA500B8A11B /* JSCPublicFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +192,10 @@
 				690C00F522432D93002E2344 /* widgedDemo */,
 				690C010822432D94002E2344 /* widgedDemoTests */,
 				690C011322432D94002E2344 /* widgedDemoUITests */,
+				690C013322433273002E2344 /* widgedDemoWidgedToday */,
+				69F0DE9922446CA500B8A11B /* JSCPublicFramework */,
+				69F0DEA622446CA500B8A11B /* JSCPublicFrameworkTests */,
+				690C013022433273002E2344 /* Frameworks */,
 				690C00F422432D93002E2344 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +206,9 @@
 				690C00F322432D93002E2344 /* widgedDemo.app */,
 				690C010522432D94002E2344 /* widgedDemoTests.xctest */,
 				690C011022432D94002E2344 /* widgedDemoUITests.xctest */,
+				690C012F22433273002E2344 /* widgedDemoWidgedToday.appex */,
+				69F0DE9822446CA500B8A11B /* JSCPublicFramework.framework */,
+				69F0DEA022446CA500B8A11B /* JSCPublicFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,12 +216,19 @@
 		690C00F522432D93002E2344 /* widgedDemo */ = {
 			isa = PBXGroup;
 			children = (
+				690C0142224334DE002E2344 /* widgedDemo.entitlements */,
 				690C00F622432D93002E2344 /* AppDelegate.h */,
 				690C00F722432D93002E2344 /* AppDelegate.m */,
 				690C00F922432D93002E2344 /* Assets.xcassets */,
 				690C00FB22432D93002E2344 /* LaunchScreen.storyboard */,
 				690C00FE22432D93002E2344 /* Info.plist */,
 				690C00FF22432D93002E2344 /* main.m */,
+				690C01222243300C002E2344 /* HomeViewController.h */,
+				690C01232243300C002E2344 /* HomeViewController.m */,
+				690C01252243317E002E2344 /* EquipmentViewController.h */,
+				690C01262243317E002E2344 /* EquipmentViewController.m */,
+				690C0128224331AD002E2344 /* FriendsViewController.h */,
+				690C0129224331AD002E2344 /* FriendsViewController.m */,
 			);
 			path = widgedDemo;
 			sourceTree = "<group>";
@@ -124,7 +251,58 @@
 			path = widgedDemoUITests;
 			sourceTree = "<group>";
 		};
+		690C013022433273002E2344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				690C013122433273002E2344 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		690C013322433273002E2344 /* widgedDemoWidgedToday */ = {
+			isa = PBXGroup;
+			children = (
+				690C0143224334E9002E2344 /* widgedDemoWidgedToday.entitlements */,
+				690C013422433273002E2344 /* TodayViewController.h */,
+				690C013522433273002E2344 /* TodayViewController.m */,
+				690C013A22433273002E2344 /* Info.plist */,
+			);
+			path = widgedDemoWidgedToday;
+			sourceTree = "<group>";
+		};
+		69F0DE9922446CA500B8A11B /* JSCPublicFramework */ = {
+			isa = PBXGroup;
+			children = (
+				69F0DE9A22446CA500B8A11B /* JSCPublicFramework.h */,
+				69F0DE9B22446CA500B8A11B /* Info.plist */,
+				69F0DEB722446D5000B8A11B /* JSCDataShare.h */,
+				69F0DEB822446D5000B8A11B /* JSCDataShare.m */,
+			);
+			path = JSCPublicFramework;
+			sourceTree = "<group>";
+		};
+		69F0DEA622446CA500B8A11B /* JSCPublicFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				69F0DEA722446CA500B8A11B /* JSCPublicFrameworkTests.m */,
+				69F0DEA922446CA500B8A11B /* Info.plist */,
+			);
+			path = JSCPublicFrameworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		69F0DE9522446CA500B8A11B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F0DEAA22446CA500B8A11B /* JSCPublicFramework.h in Headers */,
+				69F0DEB922446D5000B8A11B /* JSCDataShare.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		690C00F222432D93002E2344 /* widgedDemo */ = {
@@ -134,10 +312,14 @@
 				690C00EF22432D93002E2344 /* Sources */,
 				690C00F022432D93002E2344 /* Frameworks */,
 				690C00F122432D93002E2344 /* Resources */,
+				690C014122433273002E2344 /* Embed App Extensions */,
+				69F0DEB422446CA600B8A11B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				690C013C22433273002E2344 /* PBXTargetDependency */,
+				69F0DEAC22446CA500B8A11B /* PBXTargetDependency */,
 			);
 			name = widgedDemo;
 			productName = widgedDemo;
@@ -180,6 +362,60 @@
 			productReference = 690C011022432D94002E2344 /* widgedDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		690C012E22433273002E2344 /* widgedDemoWidgedToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 690C013E22433273002E2344 /* Build configuration list for PBXNativeTarget "widgedDemoWidgedToday" */;
+			buildPhases = (
+				690C012B22433273002E2344 /* Sources */,
+				690C012C22433273002E2344 /* Frameworks */,
+				690C012D22433273002E2344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgedDemoWidgedToday;
+			productName = widgedDemoWidgedToday;
+			productReference = 690C012F22433273002E2344 /* widgedDemoWidgedToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		69F0DE9722446CA500B8A11B /* JSCPublicFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69F0DEB322446CA600B8A11B /* Build configuration list for PBXNativeTarget "JSCPublicFramework" */;
+			buildPhases = (
+				69F0DE9322446CA500B8A11B /* Sources */,
+				69F0DE9422446CA500B8A11B /* Frameworks */,
+				69F0DE9522446CA500B8A11B /* Headers */,
+				69F0DE9622446CA500B8A11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSCPublicFramework;
+			productName = JSCPublicFramework;
+			productReference = 69F0DE9822446CA500B8A11B /* JSCPublicFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		69F0DE9F22446CA500B8A11B /* JSCPublicFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69F0DEB522446CA600B8A11B /* Build configuration list for PBXNativeTarget "JSCPublicFrameworkTests" */;
+			buildPhases = (
+				69F0DE9C22446CA500B8A11B /* Sources */,
+				69F0DE9D22446CA500B8A11B /* Frameworks */,
+				69F0DE9E22446CA500B8A11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69F0DEA322446CA500B8A11B /* PBXTargetDependency */,
+				69F0DEA522446CA500B8A11B /* PBXTargetDependency */,
+			);
+			name = JSCPublicFrameworkTests;
+			productName = JSCPublicFrameworkTests;
+			productReference = 69F0DEA022446CA500B8A11B /* JSCPublicFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,7 +427,12 @@
 				TargetAttributes = {
 					690C00F222432D93002E2344 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					690C010422432D94002E2344 = {
 						CreatedOnToolsVersion = 9.2;
@@ -199,6 +440,24 @@
 						TestTargetID = 690C00F222432D93002E2344;
 					};
 					690C010F22432D94002E2344 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 690C00F222432D93002E2344;
+					};
+					690C012E22433273002E2344 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					69F0DE9722446CA500B8A11B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					69F0DE9F22446CA500B8A11B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 690C00F222432D93002E2344;
@@ -221,6 +480,9 @@
 				690C00F222432D93002E2344 /* widgedDemo */,
 				690C010422432D94002E2344 /* widgedDemoTests */,
 				690C010F22432D94002E2344 /* widgedDemoUITests */,
+				690C012E22433273002E2344 /* widgedDemoWidgedToday */,
+				69F0DE9722446CA500B8A11B /* JSCPublicFramework */,
+				69F0DE9F22446CA500B8A11B /* JSCPublicFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +511,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		690C012D22433273002E2344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F0DE9622446CA500B8A11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F0DE9E22446CA500B8A11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,8 +539,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690C012A224331AD002E2344 /* FriendsViewController.m in Sources */,
 				690C010022432D93002E2344 /* main.m in Sources */,
 				690C00F822432D93002E2344 /* AppDelegate.m in Sources */,
+				690C01242243300C002E2344 /* HomeViewController.m in Sources */,
+				690C01272243317E002E2344 /* EquipmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +563,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		690C012B22433273002E2344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690C013622433273002E2344 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F0DE9322446CA500B8A11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F0DEBA22446D5000B8A11B /* JSCDataShare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F0DE9C22446CA500B8A11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F0DEA822446CA500B8A11B /* JSCPublicFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +599,26 @@
 			isa = PBXTargetDependency;
 			target = 690C00F222432D93002E2344 /* widgedDemo */;
 			targetProxy = 690C011122432D94002E2344 /* PBXContainerItemProxy */;
+		};
+		690C013C22433273002E2344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 690C012E22433273002E2344 /* widgedDemoWidgedToday */;
+			targetProxy = 690C013B22433273002E2344 /* PBXContainerItemProxy */;
+		};
+		69F0DEA322446CA500B8A11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69F0DE9722446CA500B8A11B /* JSCPublicFramework */;
+			targetProxy = 69F0DEA222446CA500B8A11B /* PBXContainerItemProxy */;
+		};
+		69F0DEA522446CA500B8A11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 690C00F222432D93002E2344 /* widgedDemo */;
+			targetProxy = 69F0DEA422446CA500B8A11B /* PBXContainerItemProxy */;
+		};
+		69F0DEAC22446CA500B8A11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69F0DE9722446CA500B8A11B /* JSCPublicFramework */;
+			targetProxy = 69F0DEAB22446CA500B8A11B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,11 +742,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = widgedDemo/widgedDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M2BU6V2Y47;
 				INFOPLIST_FILE = widgedDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo.widgedDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2191720-f556-45e7-843a-0b54f488818a";
+				PROVISIONING_PROFILE_SPECIFIER = jscDemo_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -425,11 +759,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = widgedDemo/widgedDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M2BU6V2Y47;
 				INFOPLIST_FILE = widgedDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo.widgedDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2191720-f556-45e7-843a-0b54f488818a";
+				PROVISIONING_PROFILE_SPECIFIER = jscDemo_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -488,6 +826,112 @@
 			};
 			name = Release;
 		};
+		690C013F22433273002E2344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = widgedDemoWidgedToday/widgedDemoWidgedToday.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M2BU6V2Y47;
+				INFOPLIST_FILE = widgedDemoWidgedToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo.wedged;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4244c369-1536-437c-bb8f-c1a559f967e1";
+				PROVISIONING_PROFILE_SPECIFIER = JSCDemoWedget_dev;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		690C014022433273002E2344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = widgedDemoWidgedToday/widgedDemoWidgedToday.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M2BU6V2Y47;
+				INFOPLIST_FILE = widgedDemoWidgedToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo.wedged;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4244c369-1536-437c-bb8f-c1a559f967e1";
+				PROVISIONING_PROFILE_SPECIFIER = JSCDemoWedget_dev;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		69F0DEAF22446CA600B8A11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M2BU6V2Y47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JSCPublicFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo.JSCPublicFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69F0DEB022446CA600B8A11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M2BU6V2Y47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JSCPublicFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo.JSCPublicFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69F0DEB122446CA600B8A11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JSCPublicFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo.JSCPublicFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/widgedDemo.app/widgedDemo";
+			};
+			name = Debug;
+		};
+		69F0DEB222446CA600B8A11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JSCPublicFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsc.demo.JSCPublicFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/widgedDemo.app/widgedDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,6 +967,33 @@
 			buildConfigurations = (
 				690C012022432D94002E2344 /* Debug */,
 				690C012122432D94002E2344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		690C013E22433273002E2344 /* Build configuration list for PBXNativeTarget "widgedDemoWidgedToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690C013F22433273002E2344 /* Debug */,
+				690C014022433273002E2344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69F0DEB322446CA600B8A11B /* Build configuration list for PBXNativeTarget "JSCPublicFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69F0DEAF22446CA600B8A11B /* Debug */,
+				69F0DEB022446CA600B8A11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69F0DEB522446CA600B8A11B /* Build configuration list for PBXNativeTarget "JSCPublicFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69F0DEB122446CA600B8A11B /* Debug */,
+				69F0DEB222446CA600B8A11B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

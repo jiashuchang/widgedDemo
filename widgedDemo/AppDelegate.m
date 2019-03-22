@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "EquipmentViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +22,48 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    HomeViewController *homeVC = [[HomeViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    self.window.rootViewController = nav;
     return YES;
+}
+// 所有版本的都可以使用
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    [self appCallbackWithOpenUrl:url];
+    
+    return YES;
+}
+
+/// iOS 8 以后
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+    
+    [self appCallbackWithOpenUrl:url];
+    
+    return YES;
+}
+
+/// iOS 7
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    
+    [self appCallbackWithOpenUrl:url];
+    
+    return YES;
+}
+
+- (void)appCallbackWithOpenUrl:(NSURL *)url{
+    // 针对url进行不同的操作
+    NSLog(@"url====%@",url);
+    NSLog(@"url.host===%@ url.scheme===%@",url.host,url.scheme);
+    if([url.absoluteString hasPrefix:@"widgedDemo"]) {
+        if([url.host isEqualToString:@"equipment"]) {
+            //判断是否是直接跳入到具体页面
+            UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
+            EquipmentViewController *equipmentVC = [[EquipmentViewController alloc] init];
+            [nav pushViewController:equipmentVC animated:YES];
+        }
+    }
+    
 }
 
 

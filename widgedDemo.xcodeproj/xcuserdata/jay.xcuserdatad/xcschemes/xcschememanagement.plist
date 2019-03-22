@@ -4,10 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JSCPublicFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>widgedDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>widgedDemoWidgedToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>690C00F222432D93002E2344</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>690C010422432D94002E2344</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>690C010F22432D94002E2344</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>690C012E22433273002E2344</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
